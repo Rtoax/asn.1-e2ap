@@ -4,6 +4,8 @@ README
 # asn.1-e2ap
 ASN.1 coding
 
+[https://github.com/Rtoax/test/tree/master/ASN.1/asn1c/jt_sran/e2ap](https://github.com/Rtoax/test/tree/master/ASN.1/asn1c/jt_sran/e2ap)
+
 
 本文件夹内的 ASN.1 编码来源 <O-RAN.WG3.E2AP-v01.01.docx>
 
