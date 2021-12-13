@@ -1,0 +1,53 @@
+README
+==================
+
+本文件夹内的 ASN.1 编码来源 <O-RAN.WG3.E2AP-v01.01.docx>
+
+荣涛<rongtao@sylincom.com> 整理。
+
+
+步骤
+======================
+
+1. 生成 C语言
+
+```bash
+./genc.sh asn-file.asn1
+```
+
+2. 编辑代码
+
+上一步的脚本中会将代码修改为
+
+```c
+#include <stdio.h>
+
+int main(int argc, char *argv[])
+{
+    printf("ASN.1 test running.\n");
+    return 0;
+}
+```
+
+3. 生成 Makefile
+
+```
+mkdir build 
+cd build 
+cmake ..
+```
+
+4. 编译和运行
+
+```
+make
+./test
+```
+
+清理
+======================
+
+该步骤会删除 `生成 C语言` 步骤中生成的 C语言文件
+```bash
+./clean.sh
+```
